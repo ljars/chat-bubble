@@ -7,7 +7,7 @@ Tested on MMORPG Kit v1.66b
 2. Done
 
 ## Uninstall
-1. Delete UnityMultiplayerARPG_ChatBubble folder
+1. Delete the ChatBubble folder
 
 ## Temporarily disable
 1. Open each of your PlayerCharacterEntity prefabs
@@ -21,7 +21,7 @@ Tested on MMORPG Kit v1.66b
 
 ## Edit chat bubble duration
 1. Open the ChatBubblePrefab in ChatBubble/Resources
-2. Change the value of 'Min Duration' and 'Extra Duration Per Character' on the ChatBubble component.
+2. Change the value of `Min Duration` and `Extra Duration Per Character` on the ChatBubble component.
    The extra duration allows longer messages to be displayed for a longer amount of time.
    totalDuration = minDuration + (extraDurationPerCharacter * lengthOfMessage)
 
@@ -29,4 +29,4 @@ Tested on MMORPG Kit v1.66b
 1. Open the ChatBubblePrefab in ChatBubble/Resources
 2. Change the Message Tint Colors to whatever you want
 3. Tick the boxes for the message channels for which you want the bubble to display 
-	(e.g. unticking 'Show Guild Bubble' will hide the bubble for Guild chat)
+	(e.g. unticking `Show Guild Bubble` will hide the bubble for Guild chat)
