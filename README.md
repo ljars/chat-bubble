@@ -1,4 +1,4 @@
-# chat-bubble
+# Chat Bubble Addon
 Chat bubble addon for Suriyun's MMORPG Kit
 Tested on MMORPG Kit v1.66b
 
