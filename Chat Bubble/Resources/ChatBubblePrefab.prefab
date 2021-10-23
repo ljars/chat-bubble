@@ -388,6 +388,7 @@ MonoBehaviour:
   messagesContainer: {fileID: 4695177107400683484}
   canvas: {fileID: 3974490741742858895}
   billboard: 1
+  maxBubbleWidth: 700
   minDuration: 5
   maxDuration: 10
   extraDurationPerCharacter: 0.1
@@ -515,7 +516,7 @@ GameObject:
   - component: {fileID: 6356069491957373011}
   - component: {fileID: 7744557362945037274}
   m_Layer: 15
-  m_Name: MessagesContainer (Width Control)
+  m_Name: MessagesContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -16,7 +16,11 @@ namespace MultiplayerARPG
         [SerializeField] private GameObject[] transitionObjects;
         [SerializeField] private Transform messagesContainer;
         [SerializeField] private Canvas canvas;
+        
+        [Tooltip("If set false, the chat bubble will not rotate to face the camera.")]
         [SerializeField] private bool billboard = true;
+
+        [Header("Word-Wrap")] [SerializeField] private float maxBubbleWidth = 650f;
         
         [Header("Durations")]
         [Tooltip("The base time in seconds to display the chat bubble")]
@@ -78,6 +82,10 @@ namespace MultiplayerARPG
                 camTransform = cam.transform;
                 canvasTransform = canvas.transform;
             }
+
+            RectTransform rt = messagesContainer.GetComponent<RectTransform>();
+            rt.sizeDelta = new Vector2(maxBubbleWidth, rt.sizeDelta.y);
+
         }
 
         private void LateUpdate()
