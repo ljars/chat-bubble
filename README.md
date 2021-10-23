@@ -4,7 +4,7 @@ Tested on MMORPG Kit v1.70f
 
 ## Installation
 1. Import the folder
-2. Done
+2. Done (no configuration necessary)
 
 ## Uninstall
 1. Delete the ChatBubble folder
@@ -41,3 +41,11 @@ Tested on MMORPG Kit v1.70f
 3. Tick the boxes for the message channels for which you want the bubble to display 
 	(e.g. unticking `Show Guild Bubble` will hide the bubble for Guild chat)
 4. Note that the channel colors will be applied to all the items in the `Tinted Graphics` arrays in the `ChatBubble` and `ChatBubbleElement` components
+
+## Other settings
+1. Change the maximum number of chat bubbles that can show at once: edit `Max Bubbles` on the ChatBubblePrefab
+2. Change how long (in seconds) the transiton animations will take: edit `Transition Duration` on the ChatBubblePrefab
+3. `Bubbles Must Expire In Order` on the ChatBubblePrefab:
+* Because of the `Extra Duration Per Character`, longer messages display for longer than short ones.
+* This means if you send a long message followed by a short one, the short message may expire before the (older) long one.
+* Setting `Bubbles Must Expire In Order` to `true` will prevent this, by waiting to close a given message until after all its previous messages have closed.
