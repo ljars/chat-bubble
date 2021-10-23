@@ -4,9 +4,7 @@ namespace MultiplayerARPG
 {
     public partial class PlayerCharacterEntity
     {
-        [Header ("Chat Bubbles")]
-        public bool showChatBubbles = true;
-
+        [Header("Chat Bubbles")] public bool showChatBubbles = true;
 
         private ChatBubble bubble;
 
@@ -30,7 +28,8 @@ namespace MultiplayerARPG
 
         private void ShowChatBubble(ChatMessage chatMessage)
         {
-            if (!showChatBubbles || chatMessage.sender != CharacterName) {
+            if (!showChatBubbles || chatMessage.sender != CharacterName)
+            {
                 return;
             }
 
